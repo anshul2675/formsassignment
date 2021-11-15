@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>html form</title>
+
+<style>
+   .container {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+ padding-top: 30px;
+}
+
+
+
+.responsive-iframe {
+    margin: auto;
+    width: 35%;
+    align-self: center;
+     border: 3px  solid black;
+    
+  padding: 10px;
+}
+</style>
+
+    
+</head>
+
+<body>
+    
+   <div class="container" >
+      
+    <iframe class="responsive-iframe"id="iframe" onload="access()" src="registration_form.html"
+     height="650px"   title="Iframe Example">
+
+</iframe>
+   </div>
+
+
+<script>
+
+
+
+
+ function access() {
+    var namefield=window.frames['iframe'].contentDocument.getElementById('nameid');
+    console.log(namefield);
+
+// collect attribute
+    const minlength= namefield.getAttribute('minlength');
+console.log(exampleAttr);
+     var validator={
+        valid:function(){
+           
+      }
+
+     }
+     
+    var birthdayfield=window.frames['iframe'].contentDocument.getElementById('birthday');
+    var emailid=window.frames['iframe'].contentDocument.getElementById('emailid');
+   var contactnumber= window.frames['iframe'].contentDocument.getElementById('contactnumber')  
+}
+</script>
+
+
+</body>
+</html>

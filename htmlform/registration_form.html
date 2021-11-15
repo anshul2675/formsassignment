@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Forms </title>
+        <meta charset="utf-8" />
+        <meta content="width=device-width,initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css" />
+
+<style>
+   .container{
+       background: cornsilk;
+       
+   }
+</style>
+
+
+
+
+    </head>
+    <body>
+       
+        <div class="container" > 
+            <h1  >can you please fill this form?</h1>
+        <form class="frame" id="demoForm" >
+           <!-- name -->
+           <div class="cf mb2">
+            <div class="fl w-100">
+                <div class="fl w-25 pa2">Name</div>
+                <div class="fl w-30 mr2">
+                    <input id="nameid" type="text" required minlength="4" maxlength="10" id="fname" name="fname">
+                </div>
+            
+
+               
+                <div class="cf mb2">
+                    <div class="fl w-100">
+                        <div class="fl w-30 pa2">Date of birth</div>
+                        <div class="fl w-30">
+                            <input type="date" required id="birthday" name="birthday">
+                        </div>
+                    </div>
+                </div>
+    
+
+            <!-- contact number -->
+            <div class="cf mb2">
+                <div class="fl w-100">
+                    <div class="fl w-30 pa2">Contact Number</div>
+                    <div class="fl w-30">
+                      <input type="number" required minlength="10"  >
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+           <!-- populated contury and state -->
+         <div >
+             
+            <label for="Country">Choose your Country:</label>
+            <select id="country" name="countryvalue">
+            </select>
+
+        </div>
+         <!-- state  -->
+         <div>
+            <label for="">state</label>
+            <br/>
+            <select id="state" name="statevalue">
+
+            </select>
+        </div>
+
+        <!-- email -->
+        <div class="cf mb2">
+            <div class="fl w-100">
+                <div class="fl w-25 pa2">EmailId</div>
+                <div class="fl w-40">
+                    <input type="email" required id="email" name="email">
+                </div>
+            </div>
+        </div>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+         <div class="cf mb2">
+            <div class="fl ">
+                <div class="fl w-25 "></div>
+                <div class="fl w-50">
+                    <button type="submit"  class="ba b--black-20 bg-blue white ph3 pv2 br2">Submit</button>
+                </div>
+            </div>
+        </div>
+        </form>
+           
+    </div>
+  
+         <script src="./index.js"></script>
+    </body>
+</html>
